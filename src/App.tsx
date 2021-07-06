@@ -1,13 +1,45 @@
+import { useState } from 'react';
+import { ModalProvider } from './components/ModalContext';
 import { Home } from './pages/Home'
-import '../src/styles/Global.css'
+import { NewModal } from './pages/Modal';
+import { GlobalStyle } from './styles/global'
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root')
+
+declare namespace JSX {
+  interface IntrinsicAttributes {
+    openModal: () => void;
+  }
+}
+
 
 
 function App() {
+  const [newmodalOpen, setNewModalOpen] = useState(false)
+
+  function handleOpenModal(){
+    setNewModalOpen(true)
+  }
+
+  function handlecloseModal(){
+    setNewModalOpen(false)
+  }
+
 
 
   return (
     <div>
-      <Home />
+     <ModalProvider>
+      <Home openModal={handleOpenModal}/>
+
+      <NewModal 
+        isOpen={newmodalOpen}
+        onRequestClose={handlecloseModal}
+      />
+
+      <GlobalStyle />
+      </ModalProvider>
     </div>
   );
 }
