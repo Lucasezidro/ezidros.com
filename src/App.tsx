@@ -32,14 +32,12 @@ function App() {
     <div>
      <ModalProvider>
       <Home openModal={handleOpenModal}/>
-
       <NewModal 
         isOpen={newmodalOpen}
         onRequestClose={handlecloseModal}
       />
-
-      <GlobalStyle />
       </ModalProvider>
+      <GlobalStyle />
     </div>
   );
 }

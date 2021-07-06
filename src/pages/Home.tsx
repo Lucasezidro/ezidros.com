@@ -3,6 +3,10 @@ import martelo from '../assets/images/martelo.png'
 import trabalhadores from '../assets/images/trabalhadores.png'
 import pincel from '../assets/images/pincel.png'
 import logo from '../assets/images/logo.jpeg'
+import whats from '../assets/images/whatsapp.png'
+import facebook from '../assets/images/facebook.png'
+import gmail from '../assets/images/gmail.png'
+import eletricity from '../assets/images/eletrcity.jpg'
 import { Container } from './home'
 
 interface HeaderProps {
@@ -10,6 +14,7 @@ interface HeaderProps {
 }
 
 export function Home({ openModal }: HeaderProps){
+
     return(
         <Container>
             <header>
@@ -20,7 +25,7 @@ export function Home({ openModal }: HeaderProps){
                 </h1>
 
                 <span className="span-header">Serviços de confiança</span>
-                <a href="/saibaMais">
+                <a href="/saibamais">
                     Saiba mais
                 </a>
 
@@ -59,7 +64,43 @@ export function Home({ openModal }: HeaderProps){
                             Serviços de pinturas residenciais.
                         </span>
                     </div>
+
+                    <div className="center">
+                        <img src={eletricity} alt="imagem trabalhador centro do site" />
+
+                        <div className="objective">
+                            <h4>Nosso Objetivo</h4>
+                            <span>
+                            EZIDROS.com, coloca a sua disposição integridade  seriedade e confiança na contratação dos nossos  serviços. Nosso objetivo é oferecer atendimento personalizado, desenvolvendo um trabalho sério  e competente que corresponda a sua necessidade.
+                            </span>
+                        </div>
+                    </div>
                 </main>
+
+                <footer>
+                    <img src={logo} alt="logo" className="logo-footer"/>
+
+                    <h3>Ezidros.com</h3>
+                    <span>O melhor atendimento de marido de aluguel</span>
+                    <p>Pintura | elétrica | Manuntenção | Alvenaria | Encanamento</p>
+
+                    <div className="midia">
+                        
+                        <a href="">
+                            <img src={facebook} alt="logo facebook" />
+                        </a>
+                        
+                        <a href="">
+                            <img src={whats} alt="logo whats" />
+                        </a>
+                        
+                        <a href="">
+                            <img src={gmail} alt="logo gmail" />
+                        </a>
+                    </div>
+
+                    <p className="copy">&copy;Ezidros.com</p>
+                </footer>
         </Container>
     )
 }

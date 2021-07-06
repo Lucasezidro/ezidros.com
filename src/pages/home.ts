@@ -70,8 +70,6 @@ export const Container = styled.div`
                 z-index: 1;
 
                 &:hover{
-                color: black;
-                background: var(--lightblue);
                 filter: brightness(0.8);
                 }
             }
@@ -169,6 +167,99 @@ export const Container = styled.div`
             font: 500 16px "Roboto", sans-serif;
             color: var(--lightGray);
             opacity: .8;
+        }
+
+        .center{
+            position: relative;
+            bottom: 380px; 
+            border-bottom: 1px solid var(--gray);
+
+            img{
+                margin-left: 20px;
+                border-radius: 0.5rem;
+                opacity: .9;
+            }  
+
+            .objective{
+                position: relative;
+                display: flex;
+                margin-left: 750px;
+                bottom: 300px;
+                width: 500px;
+
+                h4{
+                    position: absolute;
+                    bottom: 220px;
+                    left: 150px;
+                    color: var(--gray);
+                    font: 600 24px "Roboto", sans-serif;
+                }
+
+                span{
+                    color: var(--gray);
+                    line-height: 2.5rem;
+                }
+            }    
+        }
+
+        footer{
+            width: 100%;
+            height: 300px;
+            background: #000;
+
+            .logo-footer{
+                width: 150px;
+            }
+
+            h3{
+                position: relative;
+                display: flex;
+                align-items: center;
+                bottom: 100px;
+                font: 600 20px "Roboto", sans-serif;
+                justify-content: center;
+                color: var(--lightGray);
+            }
+
+            span{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--lightblue);
+                bottom: 70px;
+                font: 400 16px "Roboto", sans-serif;
+            }
+
+            p{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 50px;
+                color: var(--lightGray);
+                opacity: .7;
+            }
+
+            .midia{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 20px;
+                gap: 30px;
+
+                img{
+                    width: 36px;
+                }
+            }
+
+            .copy{
+                position: relative;
+                top: 20px;
+                bottom: 0;
+                opacity: .5;
+            }
         }
     
 `
