@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ModalProvider } from './components/ModalContext';
 import { Home } from './pages/Home'
 import { NewModal } from './pages/Modal';
-import { GlobalStyle } from './styles/global'
+import { GlobalStyle } from './styles/global';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root')

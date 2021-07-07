@@ -3,6 +3,7 @@ import { useState } from 'react';
 import closeImg from '../assets/images/close.png'
 import { Container } from './modal'
 import { useForm, SubmitHandler } from "react-hook-form";
+import { api } from '../services/api'
 
 
 type NewModalProps = {
@@ -31,13 +32,18 @@ export function NewModal ({ isOpen, onRequestClose }: NewModalProps) {
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
-    const [email, setEmail] =useState('')
-    const [adress, setAddress] =useState('')
-    const [date, setDate] =useState('')
-    const [services, setServices] =useState('')
+    const [email, setEmail] = useState('')
+    const [adress, setAddress] = useState('')
+    const [date, setDate] = useState('')
+    const [services, setServices] = useState('')
 
-    function handleSubmitButton(){
-        const data = [email, adress, date, services]
+    async function handleSubmitButton(){
+        const data = {
+            email_usuario: email, 
+            adress_usuario: adress, 
+            date_usuario: date, 
+            service_usuario: services
+        }
     }
 
     return(
@@ -117,7 +123,7 @@ export function NewModal ({ isOpen, onRequestClose }: NewModalProps) {
                         <button 
                             type="submit" 
                             className="btn-send"
-                            
+                            onClick={handleSubmitButton}
                             >
                             Enviar
                         </button>

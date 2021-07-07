@@ -7,13 +7,16 @@ import whats from '../assets/images/whatsapp.png'
 import facebook from '../assets/images/facebook.png'
 import gmail from '../assets/images/gmail.png'
 import eletricity from '../assets/images/eletrcity.jpg'
+import avatarImg from '../assets/images/saibamaisavatar.jpg'
 import { Container } from './home'
+
 
 interface HeaderProps {
     openModal: () => void;
 }
 
 export function Home({ openModal }: HeaderProps){
+
 
     return(
         <Container>
@@ -25,9 +28,13 @@ export function Home({ openModal }: HeaderProps){
                 </h1>
 
                 <span className="span-header">Serviços de confiança</span>
-                <a href="/saibamais">
+                <button 
+                    type="button" 
+                    className="btn-saibamais"
+                    
+                    >
                     Saiba mais
-                </a>
+                </button>
 
                 <button 
                     type="button" 
@@ -75,7 +82,20 @@ export function Home({ openModal }: HeaderProps){
                             </span>
                         </div>
                     </div>
+                
                 </main>
+
+                <div className="saibamais">
+                    <h1 className="title-saibamais">Saiba Mais</h1>
+                    <ul>
+                        <li>Pintura</li>
+                        <li>Alvenaria</li>
+                        <li>Encanamento</li>
+                        <li>Manutenção de ar Condicionado</li>
+                        <li>Parte Eletrica</li>
+                    </ul>
+                    <img src={avatarImg} alt="avatar" className="img-saibamais"/>
+                </div>
 
                 <footer>
                     <img src={logo} alt="logo" className="logo-footer"/>
@@ -86,11 +106,11 @@ export function Home({ openModal }: HeaderProps){
 
                     <div className="midia">
                         
-                        <a href="">
+                        <a href="https://www.facebook.com/Ezidroscom-104345298589271" target="_blank">
                             <img src={facebook} alt="logo facebook" />
                         </a>
                         
-                        <a href="">
+                        <a href="https://web.whatsapp.com/send?phone=5511913167858" target="_blank">
                             <img src={whats} alt="logo whats" />
                         </a>
                         

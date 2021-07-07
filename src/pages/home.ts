@@ -32,13 +32,13 @@ export const Container = styled.div`
                 z-index: 0;
             }
 
-            a{
+            .btn-saibamais{
                 position: relative;
                 top: 90px;
                 left: 240px;    
                 height: 5px;
                 color: var(--lightblue);
-                text-decoration: none;
+                background: transparent;
                 z-index: 0;
                 transition: all 0.5s;
 
@@ -199,7 +199,42 @@ export const Container = styled.div`
                     color: var(--gray);
                     line-height: 2.5rem;
                 }
-            }    
+            } 
+        }
+
+        .saibamais{
+            position: absolute;
+            top: 1150px;
+            width: 100%;
+            height: 300px;
+            background: transparent;
+
+            h1{
+                position: relative;
+                top: 140px;
+                margin-left: 240px;
+                font: 600 30px "Roboto", sans-serif;
+                color: var(--gray)
+            }
+
+            ul{
+                position: relative;
+                top: 200px;
+                margin-left: 280px;
+
+                li{
+                    font: 400 20px "Roboto", sans-serif;
+                    color: var(--gray);
+                    margin-bottom: 20px;
+                }
+            }
+
+            img{
+                position: relative;
+                top: -100px;
+                left: 780px;
+                width: 280px;
+            }
         }
 
         footer{

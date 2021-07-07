@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import worker from '../assets/images/worker.jpg'
 
 export const Container = styled.div`
    form {
@@ -10,8 +9,8 @@ export const Container = styled.div`
        align-items: center;
        justify-content: center;
        width: 100%;
-       height: 100%;
-       background-image: url(${worker});
+       height: 100vh;
+       background: var(--blue);
        background-size: cover;
 
 
