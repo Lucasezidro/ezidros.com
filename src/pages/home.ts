@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import workerImg from '../assets/images/eletrcity.jpg' 
 
 export const Container = styled.div`
     header{ 
@@ -294,6 +295,189 @@ export const Container = styled.div`
                 top: 20px;
                 bottom: 0;
                 opacity: .5;
+            }
+        }
+
+        @media (max-width: 500px ){
+            header {
+                display: block;
+                width: 100vh;
+                height: 200px;
+                background: #000;
+                transition: all 1s;
+                border-bottom: 10.99px solid #FFF;
+
+                h1{
+                    display: none;
+                }
+
+                .span-header{
+                    display: none;
+                }
+
+                .btn-saibamais{
+                    display: none;
+                }
+
+                .btn-header{
+                    position:fixed;
+                    width: 150px;
+                    top: 10px;
+                    padding: 15px;
+                    left: -300px;
+                }
+            }
+
+            main{
+                .avatar{
+                    position: relative;
+                    right: 420px;
+                    width: 250px;
+                }
+
+                .card-1{
+                    position: relative;
+                    left: 5px;
+                    top: -347px;
+                    width: 150px;
+                    height: 100px;
+                }
+
+                .martelo{
+                    position: relative;
+                    left: 60px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .span-card1{
+                    margin-top: 30px;
+                    font-size: 12px;
+                }
+
+                .card-2{
+                    position: relative;
+                    left: 165px;
+                    top: -445px;
+                    width: 150px;
+                    height: 100px;
+                }
+
+                .trabalhadores{
+                    position: relative;
+                    left: 60px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .span-card2{
+                    margin-top: 30px;
+                    font-size: 12px;
+                }
+
+                .card-3{
+                    position: relative;
+                    left: 325px;
+                    top: -545px;
+                    width: 150px;
+                    height: 100px;
+                }
+
+                .pincel{
+                    position: relative;
+                    left: 60px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .span-card3{
+                    margin-top: 30px;
+                    font-size: 12px;
+                }
+            }
+
+            .center{
+                position: relative;
+                top: -100px;
+                width: 100vh;
+                border: none;
+                
+                img{
+                    position: relative;
+                    top: -90px;
+                    width: 230px;
+                }
+
+                .objective{
+                    width: 210px;
+
+                    h4{
+                    position: absolute;
+                    font-size: 18px;
+                    top: 10px;
+                    left: -680px;
+                }
+
+                span{
+                    position: relative;
+                    font-size: 14px;
+                    top: 50px;
+                    left: -490px;
+                    line-height: 1.5rem;
+                }
+                }
+                
+            }
+
+            .saibamais{
+                position: absolute;
+
+                .title-saibamais{
+                    position: relative;
+                    top: -320px;
+                    left: -170px;
+                    font-size: 18px;
+                }
+
+                ul{
+                    position: relative;
+                    top: -295px;
+                    left: -200px;
+
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .img-saibamais{
+                    position: relative;
+                    width: 200px;
+                    top: -500px;
+                    left: 230px;
+                }
+            }
+
+            footer{
+                position: absolute;
+                width: 100vh;
+                height: 200px;
+
+                .logo-footer{
+                    position: relative;
+                    top: 15px;     
+                }
+
+                h3{
+                    top: -145px;
+                }
+
+                span{
+                    display: none;   
+                }
+
+                p{
+                    display: none;
+                }
             }
         }
     

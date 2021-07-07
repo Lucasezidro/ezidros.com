@@ -57,7 +57,7 @@ export function Home({ openModal }: HeaderProps){
                     </div>
 
                     <div className="card-2">
-                        <img src={trabalhadores} alt="logo martelo" className="martelo" />
+                        <img src={trabalhadores} alt="logo martelo" className="trabalhadores" />
 
                         <span className="span-card2">
                             Trabalhadores eficazes e prontos para lhe atender.
@@ -65,7 +65,7 @@ export function Home({ openModal }: HeaderProps){
                     </div>
 
                     <div className="card-3">
-                        <img src={pincel} alt="logo martelo" className="martelo" />
+                        <img src={pincel} alt="logo martelo" className="pincel" />
 
                         <span className="span-card3">
                             Serviços de pinturas residenciais.
